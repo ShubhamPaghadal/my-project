@@ -16,7 +16,7 @@ function Cart({item,  add_cart, add_item, add_wishlist_cart, remove_cart}) {
   box-border transition-shadow duration-[0.3s] bg-white relative 
   p-5 rounded-2xl border-solid
    hover:shadow-[0_4px_8px_rgba(0,0,0,0.1)]
-   cursor-pointer
+   shadow-2xl 
    ">
 <div >
 <span

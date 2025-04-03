@@ -17,11 +17,12 @@ function Toggle_item({add_item, setadd_item}) {
 
   return (
   <>
+
   {
   add_item.length <= 0  ? <h1 className='text-center  mt-[12%]'>Cart is emptty</h1> :  
   <>
    { add_item.map((item) => (
-      <div key={item.id}  className="  border-b-4  flex-col justify-between  max-w-[1440px]  m-[auto] flex flex-wrap gap-12  mt-[151px]
+      <div key={item.id}  className=" border-b-4  flex-col justify-between  max-w-[1440px]  m-[auto] flex flex-wrap gap-12  mt-[151px]
       items-center border border-black w-[calc(26.33%_-_20px)]
        box-border transition-shadow duration-[0.3s] bg-white relative 
        p-5 rounded-2xl border-solid
@@ -29,6 +30,7 @@ function Toggle_item({add_item, setadd_item}) {
         cursor-pointer
         ">
      <div >
+      
      {/* <span
              className="absolute font-medium text-[rgb(163,37,37)] text-[1.2rem] w-[25px] h-[25px] flex justify-center items-center cursor-pointer transition-[background-color] duration-[0.3s] ease-[ease] rounded-[50%] right-0 top-0 hover:text-[rgb(252,6,6)]"
              onClick={() => handleDelete(item.id)}
