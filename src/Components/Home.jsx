@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Cart from './Product_list';
-import { Audio } from 'react-loader-spinner'
+// import { Audio } from 'react-loader-spinner'
 // const sort_category = ["electronics","jewelery","men's clothing","women's clothing"]
 // console.log('sort_category',sort_category)
 
@@ -39,7 +39,7 @@ function Home({add_cart,  add_item, add_wishlist_cart, product ,loading}) {
         </div> */}
       
       {loading ?    <div className="flex justify-center ">
-        <Audio
+        {/* <Audio
   height="80"
   width="80"
   radius="9"
@@ -47,7 +47,7 @@ function Home({add_cart,  add_item, add_wishlist_cart, product ,loading}) {
   ariaLabel="loading"
   wrapperStyle
   wrapperClass
-/>
+/> */}
    </div>:
          <div className=' '> 
          <div className='mt-[151px] flex justify-end mr-[135px]'>
