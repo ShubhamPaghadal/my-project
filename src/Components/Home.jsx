@@ -2,12 +2,20 @@
 
 import { useState } from 'react';
 import Cart from './Product_list';
-import { Spin } from 'antd';
+// import { Spin } from 'antd';
+import { Alert, Flex, Spin } from 'antd';
 // import { Audio } from 'react-loader-spinner'
 // const sort_category = ["electronics","jewelery","men's clothing","women's clothing"]
 // console.log('sort_category',sort_category)
 
 function Home({add_cart,  add_item, add_wishlist_cart, product ,loading}) {
+    const contentStyle = {
+        padding: 50,
+        background: 'rgba(0, 0, 0, 0.05)',
+        borderRadius: 4,
+      };
+    const content = <div style={contentStyle} />;
+
     const [sort_items, setort_items] = useState('')
     const [selectedCategory, setselectedCategory] = useState(null)
    
@@ -40,7 +48,17 @@ function Home({add_cart,  add_item, add_wishlist_cart, product ,loading}) {
         </div> */}
       
       {loading ?    <div className="flex justify-center ">
-        <Spin  className='mt-[22%]' />
+        {/* <Spin  className='mt-[22%]' /> */}
+    <div className='mt-[22%]'>
+    <Flex gap="middle" vertical>
+    <Flex gap="middle">
+      <Spin tip="Loading" size="large">
+        {content}
+      </Spin>
+    </Flex>
+
+  </Flex>
+    </div>
         {/* <Audio
   height="80"
   width="80"
