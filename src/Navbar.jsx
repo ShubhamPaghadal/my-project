@@ -28,7 +28,7 @@ function Navbar({add_item, setquery, add_wishlist}) {
                                 } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                               }
                             >
-                              Home
+                            <p className='hover:underline '>  Home</p>
                             </NavLink>
                   
                      
