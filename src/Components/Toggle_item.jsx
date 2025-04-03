@@ -75,7 +75,7 @@ function Toggle_item({add_item, setadd_item}) {
     <Link to='/'> 
     <button  className='border-black bg-yellow-500  w-[168px] rounded-lg '  > Back to shopping</button>
     </Link>
-    <h1 className=''>Total price:-${price_mapping}</h1>
+    <h1 className=''>Total price:-  ${price_mapping}</h1>
    
     </div>
     </>
