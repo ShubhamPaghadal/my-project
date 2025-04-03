@@ -1,5 +1,6 @@
 import React from 'react'
 import Cart from './Product_list'
+import { Link } from 'react-router-dom'
 
 
 function Toggle_item({add_item, setadd_item}) {
@@ -17,7 +18,7 @@ function Toggle_item({add_item, setadd_item}) {
   return (
   <>
   {
-  add_item.length <= 0  ? 'Cart is emptty' :  
+  add_item.length <= 0  ? <h1 className='text-center  mt-[12%]'>Cart is emptty</h1> :  
   <>
    { add_item.map((item) => (
       <div key={item.id}  className="  border-b-4  flex-col justify-between  max-w-[1440px]  m-[auto] flex flex-wrap gap-12  mt-[151px]
@@ -70,7 +71,13 @@ function Toggle_item({add_item, setadd_item}) {
           
     ))}                                                                                 
     <hr  className='my-[50px]' />                               
-     <h1 className='text-center'>Total price:-${price_mapping}</h1>
+    <div className='flex justify-evenly'>  
+    <Link to='/'> 
+    <button  className='border-black bg-yellow-500  w-[168px] rounded-lg '  > Back to shopping</button>
+    </Link>
+    <h1 className=''>Total price:-${price_mapping}</h1>
+   
+    </div>
     </>
 
   }

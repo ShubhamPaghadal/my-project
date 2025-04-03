@@ -16,7 +16,7 @@ function Navbar({add_item, setquery, add_wishlist}) {
         <div className="main-sec  flex  justify-around items-center mt-[25px]">
            <Link  to='/'>
            <div className="header-logo">
-            <HiShoppingBag />
+            <HiShoppingBag   className='text-[28px]' />
             </div>
            </Link>
             <nav  className='flex justify-center gap-[58px] hover-underline' >
@@ -40,9 +40,9 @@ function Navbar({add_item, setquery, add_wishlist}) {
              <div className='flex gap-[15px]'>
             <div className=''> 
             <Link   to={'/wishlist'} >
-              <div className="cart-icon  text-[30px]  relative cursor-pointer  ">
+              <div className="cart-icon  text-[32px]  relative cursor-pointer  ">
                         <FaRegHeart className='color-green'  onClick={() => setshown_model(true) } />
-                    <div  className='absolute  top-[0px] right-[9px] ' >
+                    <div  className='absolute  top-[1px] right-[10px] ' >
                     <p className='text-[19px]' >{add_wishlist?.length}</p>
                     </div>
                         </div>
@@ -52,7 +52,7 @@ function Navbar({add_item, setquery, add_wishlist}) {
               <div className="cart-icon  text-[30px] relative cursor-pointer  ">
                         <LiaCartPlusSolid className=''  onClick={() => setshown_model(true) } />
                           <img src="" alt="" />
-                    <div  className='absolute  top-[-5px] right-[9px] ' >
+                    <div  className='absolute  top-[-16px] right-[9px] ' >
                     <p className='text-[19px]' >{add_item?.length}</p>
                     </div>
                         </div>

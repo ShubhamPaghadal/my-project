@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Cart from './Product_list';
+import { Spin } from 'antd';
 // import { Audio } from 'react-loader-spinner'
 // const sort_category = ["electronics","jewelery","men's clothing","women's clothing"]
 // console.log('sort_category',sort_category)
@@ -39,6 +40,7 @@ function Home({add_cart,  add_item, add_wishlist_cart, product ,loading}) {
         </div> */}
       
       {loading ?    <div className="flex justify-center ">
+        <Spin  className='mt-[22%]' />
         {/* <Audio
   height="80"
   width="80"
@@ -50,7 +52,7 @@ function Home({add_cart,  add_item, add_wishlist_cart, product ,loading}) {
 /> */}
    </div>:
          <div className=' '> 
-         <div className='mt-[151px] flex justify-end mr-[135px]'>
+         <div className='mt-[120px] mb-[32px]  flex justify-end mr-[135px]'>
     <select
         onChange={(e) => setselectedCategory(categoryOption.find(option => option.value === e.target.value))}
         value={selectedCategory?.value || ''}

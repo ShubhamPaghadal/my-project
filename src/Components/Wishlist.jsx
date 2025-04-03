@@ -1,5 +1,6 @@
 import React from 'react'
 import Cart from './Product_list'
+import { Link } from 'react-router-dom'
 
 
 function Wishlist({add_wishlist, setadd_wishlist}) {
@@ -17,7 +18,7 @@ function Wishlist({add_wishlist, setadd_wishlist}) {
   return (
   <>
   {
-  add_wishlist.length <= 0  ? 'Cart is emptty' :  
+  add_wishlist.length <= 0  ? <h1 className='text-center  mt-[12%]' >Cart is emptty</h1> :  
   <>
    { add_wishlist.map((item) => (
       <div key={item.id}  className="  border-b-4  flex-col justify-between  max-w-[1440px]  m-[auto] flex flex-wrap gap-12  mt-[151px]
@@ -64,9 +65,13 @@ function Wishlist({add_wishlist, setadd_wishlist}) {
      </div>
      
         </div>
-    ))}                                                                                 
+    ))}    
+
+    <hr className='mt-[50px]' />                                                                             
         <Link  to='/'> 
-        Back to shopping
+      <div className='text-center mt-[50px] '  >
+      <button className='w-[171px] bg-yellow-400 border-black rounded-lg'>Back to shopping</button>
+      </div>
         </Link>
     </>
 
