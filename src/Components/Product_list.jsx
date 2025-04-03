@@ -59,7 +59,7 @@ function Cart({item,  add_cart, add_item, add_wishlist_cart, remove_cart}) {
          
 
         } */}
-           <button onClick={ () => add_cart(item) }   className={` w-[82px] bg-[yellow] border-2 
+           <button onClick={ () => add_cart(item) }   className={` w-[100px] bg-[yellow] border-2 
              border-sky-500   rounded-lg `}  >add to cart</button>
       </div>
 </div>
