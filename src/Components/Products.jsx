@@ -15,8 +15,8 @@ function Products() {
     product_details()
   }, [])
 
+  
   console.log('get_product...',get_product)
-
   return (
     <>
     {/* <div className='max-w-[1440px]  m-[auto]  mt-[151px] '  >

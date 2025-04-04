@@ -17,7 +17,7 @@ function Navbar({add_item, setquery, add_wishlist}) {
            <Link  to='/'>
            <div className="header-logo">
             <HiShoppingBag   className='text-[28px]' />
-            </div>
+            </div>ssss
            </Link>
             <nav  className='flex justify-center gap-[58px] hover-underline' >
                          <NavLink
