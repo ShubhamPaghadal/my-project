@@ -54,7 +54,6 @@ console.log('add_wishlist.......',add_wishlist)
     <BrowserRouter>
     <Routes>
         <Route path='/'  element={<Layouts add_wishlist={add_wishlist} add_item={add_item} setquery=
-
         {setquery}/>} >
           <Route path='drop_down/:category'  element={<Drop_down />}  />
 
